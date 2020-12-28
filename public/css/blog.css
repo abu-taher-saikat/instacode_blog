@@ -1,0 +1,118 @@
+/* blog section */
+@import url(./bottom-blog.css);
+
+.blog-bottom-divs .blog-heading{
+    font-size: 18px;
+    font-family: var(--font-popins);
+    font-weight: 700;
+    color: var(--working-well);
+    line-height: 23px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.blog-bottom-divs .blog-content{
+    font-family: var(--font-roboto);
+    color: #231f20;
+    font-weight: 400;
+    line-height: 24px;
+    line-height: 1.2rem;
+}
+
+.blog-bottom-divs .tag_and_navigation{
+    display: flex;
+    padding-top: 1rem;
+}
+.blog-bottom-divs .tag_and_navigation p {
+    padding-right: 10px;
+    font-size: 13px;
+    color: #636363;
+
+}
+
+.blog-bottom-divs .blog-content-author{
+    /* display: flex;
+    flex-direction: row; */
+    padding-bottom: 1rem;
+}
+
+.blog-bottom-divs .blog-content-author img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.blog-bottom-divs .blog-content-author .auther-name{
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 1rem;
+
+}
+
+.blog-bottom-divs .blog-content-author .auther-position{
+    font-size: 13px;
+    color: #3d3d3d;
+    font-weight: 400px;
+    /* padding-bottom: 0rem; */
+
+}
+
+.blog-bottom-divs .blog-content-author .author-inform-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.blog-bottom-divs .bottom-blog-section{
+    padding-bottom: 2rem;
+    /* padding-top: 1rem; */
+}
+
+
+/* first section */
+.upper-double-blog .blog-content-section::before{
+    content: '';
+    display: table;
+    overflow: hidden;
+}
+.upper-double-blog .blog-content-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.blog-heading{
+    font-size: 34px;
+    font-family: var(--font-popins);
+    color: var(--working-well);
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.blog-content{
+    line-height: 1.5rem;
+}
+
+.blog-content-author img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.tag_and_navigation{
+    padding-top: 1rem;
+}
+.tag_and_navigation p{
+    padding-right: 1rem;
+
+}
+
+img{
+    border-radius: 5px;
+}
+
+.upper-double-blog::before{
+    content: "";
+    display: table;
+    overflow: hidden;
+    padding-top: 4rem;
+}

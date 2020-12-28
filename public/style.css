@@ -1,0 +1,27 @@
+
+
+/* import css files */
+@import url(./assets/css/_variables.css);
+/* include header file */
+@import url(./assets/css/_header.css);
+/* global css file */
+@import url(./assets/css/_global.css);
+/* reset css */
+@import url(./css/reset.css);
+/* what is do section */
+@import url(./css/whatido.css);
+/* heroe */
+@import url(./css/hero.css);
+/* pricing  */
+@import url(./css/price.css);
+/* client */
+@import url(./css/client.css);
+/* contact me */
+@import url(./css/contact-me.css);
+/* footer */
+@import url(./css/footer.css);
+
+
+
+/* show page */
+@import url(./css/show-page.css);

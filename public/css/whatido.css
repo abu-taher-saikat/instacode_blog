@@ -1,0 +1,10 @@
+.whatido{
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.whatido p{
+    /* line-height: .5rem !important; */
+    margin-bottom: 0;
+}

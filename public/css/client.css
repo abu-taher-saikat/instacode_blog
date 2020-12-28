@@ -1,0 +1,224 @@
+.section {
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+    position: relative;
+  }
+
+  .text-light-muted {
+    color: #8492a6 !important;
+  }
+
+  
+ .btn {
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 8px 34px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    letter-spacing: 0.5px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .btn:focus {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  
+  .btn:hover {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .rounded {
+    border-radius: 10px !important;
+  }
+  
+
+  .main-timeline:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .main-timeline .timeline {
+    width: 80%;
+    float: left;
+  }
+  
+  .main-timeline .timeline-content {
+    color: #161c2d;
+    background: #ffffff;
+    padding: 15px 20px 15px 150px;
+    margin: 0 0 60px;
+    border-radius: 100px 0px 0px;
+    display: block;
+    position: relative;
+    border: 1px dashed #ddd;
+  }
+  
+  .main-timeline .timeline-content:hover {
+    text-decoration: none;
+  }
+  
+  .main-timeline .timeline-icon {
+    /* color: #007bff; */
+    color: var(--working-well);
+    background: #f0f0fe;
+    line-height: 100px;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    line-height: 64px;
+    border: 7px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -42px;
+    left: 20px;
+    -webkit-box-shadow: 0px 0px 0px 1px #f0f0fe;
+            box-shadow: 0px 0px 0px 1px #f0f0fe;
+  }
+  
+  .main-timeline .title {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+  }
+  
+  .main-timeline .description {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  .main-timeline .timeline:nth-child(even) {
+    /* margin: -60px 0 60px; */
+    float: right;
+  }
+  
+  .main-timeline .timeline:nth-child(even) .timeline-content {
+    padding: 20px 170px 20px 20px;
+    /* margin: 60px 0 0; */
+    border-radius: 0 0 100px 0;
+  }
+  
+  .main-timeline .timeline:nth-child(even) .timeline-icon {
+    left: auto;
+    right: 20px;
+    bottom: auto;
+    top: -42px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even) {
+      width: 100%;
+      margin: 0 0 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content {
+      padding: 60px 15px 15px 15px;
+      margin: 40px 0 0;
+      border-radius: 0 0 50px 0;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon {
+      font-size: 30px;
+      line-height: 60px;
+      height: 80px;
+      width: 80px;
+      right: 15px;
+      left: auto;
+      top: -40px;
+    }
+    .skill-badge {
+      top: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 567px) {
+    .main-timeline .title {
+      font-size: 18px;
+    }
+  }
+
+
+  
+ .skill-badge {
+    cursor: pointer;
+    width: 36px;
+    /* background-color: rgba(0, 123, 254, 0.08); */
+    height: 18px;
+    position: absolute;
+    right: 15%;
+    top: 13%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* color: #007bff; */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0 0 20px 0 rgba(243, 246, 247, 0.05);
+            box-shadow: 0 0 20px 0 rgba(243, 246, 247, 0.05);
+  }
+  
+  @media (max-width: 320px) and (min-width: 767px) {
+    .skill-badge {
+      position: absolute;
+      right: 10px;
+      top: 13px;
+    }
+  }
+  
+  @media (min-width: 767px) and (max-width: 768px) {
+    .skill-badge {
+      position: absolute;
+      right: 87px;
+      top: 13px;
+    }
+  }
+
+.education-badge {
+    width: 100px !important;
+    height: 25px;
+  }
+
+.skill-brief{
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  font-weight: 400;
+  /* color: #000000; */
+  color: var(--working-well);
+  line-height: 1.2rem;
+  padding-top: 1rem;
+}
+
+.text-capitalize{
+  font-family: var(--font-popins);
+}
+
+.main-timeline .title{
+  font-family: var(--font-popins);
+  padding-bottom: 5px;
+}
+
+.skill-demo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.fan-fact{
+  padding-bottom: 50px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/e264635c4f.js" crossorigin="anonymous"></script>
+    <!-- Font Family cdn-->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Rects css -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Modernizr -->
+    <script src="/js/modernizr.js"></script> <!-- Modernizr -->
+
+    <title>Edit Blog post</title>
+</head>
+
+<body>
+    <%- include('partials/header')  %>
+
+    <section style="padding-top: 4rem;">
+
+    </section>
+    <div class="container">
+        <h1 class="mb-4">Editing <%= blog.title %></h1>
+
+        <form action="/blog/<%= blog.id %>?_method=PUT" method="POST">
+            <div class="form-group">
+                <label for="title" class="text-white">Title</label>
+                <input type="text" class="form-control" placeholder="Title" name="title" value="<%= blog.title %> "
+                    required />
+            </div>
+            <div class="form-group">
+                <label for="author" class="text-white">Author</label>
+                <input type="text" class="form-control" placeholder="Author" name="author" value="<%= blog.author %> "
+                    required />
+            </div>
+
+            <div class="form-group">
+                <label for="description" class="text-white">Description</label>
+                <textarea class="form-control" style="min-height: 500px;" name="description" placeholder="Description">
+                    <%= blog.description %> 
+                </textarea>
+            </div>
+
+            
+            <div class="form-group">
+            <label for="image" class="text-white">Upload image</label>
+            <input
+                type="file"
+                name="image"
+                class="form-control-file"
+                placeholder="/uploads/images/<%= blog.img %> "
+            />
+            </div>
+
+            <div class="form-group">
+                <a href="/" class="btn btn-warning">Cancel</a>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+
+    <!-- Counter js -->
+    <script src="/assets/js/script.js"></script> <!-- Resource jQuery -->
+    <!-- jquery min js -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/js/counter.js"></script>
+    <script src="/js/contact-me.js"></script>
+    <script src="/js/main.js"></script> <!-- Resource jQuery -->
+
+    <script>
+        tinymce.init({
+            selector: "textarea",
+            plugins: "a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker",
+            toolbar: "a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table",
+            toolbar_mode: "floating",
+            tinycomments_mode: "embedded",
+            tinycomments_author: "Author name",
+        });
+    </script>
+</body>
+
+</html>

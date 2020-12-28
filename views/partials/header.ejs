@@ -1,0 +1,42 @@
+<header class="cd-header">
+		<div class="cd-logo"><a href="/"><img src="/img/insta_code.svg" alt="Logo"></a></div>
+
+		<nav>
+			<ul class="cd-secondary-nav">
+				<% if(user) {%> 
+				<li><a href="/auth/logout">Logout</a></li>
+				<% } else { %> 
+				<li><a href="/auth/google">Google Login</a></li>
+				<% } %> 
+			</ul>
+		</nav> 
+		<!-- cd-nav -->
+
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	</header>
+
+	<nav>
+		<ul class="cd-primary-nav">
+			<li class="cd-label">Insta_code</li>
+
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="#0">Contact Me</a></li>
+			<li><a href="#0">Pricing</a></li>
+			<li><a href="index.html">Portfolio</a></li>
+
+			<!-- <li class="cd-label">Work with me</li>
+
+			<li><a href="#0">Start a project</a></li>
+			<li><a href="#0">Join In</a></li>
+			<li><a href="#0">Create an account</a></li> -->
+
+			<li class="cd-label">find me on</li>
+
+			<li class="cd-social cd-facebook"><a href="#0">Facebook</a></li>
+			<li class="cd-social cd-instagram"><a href="#0">Instagram</a></li>
+			<li class="cd-social cd-dribbble"><a href="#0">Dribbble</a></li>
+			<li class="cd-social cd-twitter"><a href="#0">Twitter</a></li>
+		</ul>
+	</nav>

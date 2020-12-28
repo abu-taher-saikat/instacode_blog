@@ -1,0 +1,22 @@
+/* let's call back The fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+/* Css Variables */
+:root{
+    --blue : #168EEA;
+    --orange : #EE4F4F;
+    --mixwhite : #FFF9EA;
+    --mixgreen : #76B852;
+    --dark : #323B43;
+    --deamdark : #59626A;
+    --grey : #CED7DF;
+    --black : #000000;
+    --working-well : #0B1F2D;
+
+
+
+    /* Font Family */
+    --font-popins :  'Poppins', sans-serif;
+    --font-roboto :  'Roboto', sans-serif;
+}

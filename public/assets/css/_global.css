@@ -1,0 +1,30 @@
+a{
+    text-decoration: none;
+}
+
+.hero-text{
+    font-family: var(--font-popins );
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    line-height: 3rem;
+}
+/* .hero-text-bottom{
+    font-family: var(--font-popins );
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    line-height: 3rem;
+} */
+.hero-brief{
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    line-height: 1.5rem;
+}

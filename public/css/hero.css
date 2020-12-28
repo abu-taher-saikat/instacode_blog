@@ -1,0 +1,93 @@
+
+
+.left-hero{
+    /* height: 100vh; */
+    /* border: 1px solid black; */
+}
+
+.hire-me-button{
+    /* background: #168EEA; */
+    background-color: var(--working-well);
+    border-radius: 3px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FAFAFA;
+    padding: 10px;
+    
+}
+.hire-me-button:hover{
+    color: gold;
+    transition: .3s;
+    text-decoration: none;
+}
+
+
+
+.vertical-center{
+    /* border: 1px solid black; */
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+
+/* Right Hero */
+.right-hero{
+    /* background-color: #168EEA; */
+    background-color: var(--working-well);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    padding-top: 7rem;
+}
+
+.hero-brief{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.hire-me-button{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-get span img{
+    font-size: 10px;
+}
+.hero-get p{
+    font-size: 14px;
+    display: inline-block;
+    /* line-height: 1.6rem; */
+    margin-right: 1rem;
+    /* padding-left: 1rem; */
+}
+
+.right-hero img{
+    z-index: 2;
+}
+
+.hero-text .bottom-to-up {
+    color: black;
+    text-decoration: none;
+    background-position-y: -0%;
+    background-image: linear-gradient( white 50%, gold 50%);
+    transition: background 500ms ease;
+    background-size: 2px;
+    background-size: auto 175%;
+}
+
+.hero-text .bottom-to-up:hover {
+    background-position-y: 100%;
+  
+  }

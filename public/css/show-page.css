@@ -1,0 +1,24 @@
+.show-page .heading{
+    font-weight: bold;
+    font-family: var(--font-popins);
+    padding-bottom: 2rem;
+}
+
+.show-page .author{
+    padding-top: 2rem;
+}
+
+.show-page .author img{
+    margin-right: 1rem;
+}
+
+
+.show-page .description{
+    line-height: 1.5rem;
+    padding-top: 2rem;
+}
+
+.show-page .description a{
+    color: var(--working-well);
+    /* color: gold; */
+}
